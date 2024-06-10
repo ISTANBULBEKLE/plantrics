@@ -15,6 +15,7 @@
 		7699B88040F8A987B510C191 /* libPods-plantrics-plantricsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-plantrics-plantricsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C6C230CA98054CE7C8D913A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6A977185E40DC1BF263C6157 /* PrivacyInfo.xcprivacy */; };
+		D10C0B9E2C15294A000F9DED /* libRNCCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10C0B9D2C1528E6000F9DED /* libRNCCameraRoll.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = plantrics;
+		};
+		D10C0B9C2C1528E6000F9DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10C0B982C1528E6000F9DED /* RNCCameraRoll.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RNCCameraRoll;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,9 +51,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-plantrics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plantrics.release.xcconfig"; path = "Target Support Files/Pods-plantrics/Pods-plantrics.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-plantrics-plantricsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plantrics-plantricsTests.debug.xcconfig"; path = "Target Support Files/Pods-plantrics-plantricsTests/Pods-plantrics-plantricsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-plantrics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-plantrics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A977185E40DC1BF263C6157 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = plantrics/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6A977185E40DC1BF263C6157 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = plantrics/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = plantrics/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-plantrics-plantricsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plantrics-plantricsTests.release.xcconfig"; path = "Target Support Files/Pods-plantrics-plantricsTests/Pods-plantrics-plantricsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D10C0B982C1528E6000F9DED /* RNCCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCCameraRoll.xcodeproj; path = "../node_modules/@react-native-camera-roll/camera-roll/ios/RNCCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10C0B9E2C15294A000F9DED /* libRNCCameraRoll.a in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-plantrics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +124,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D10C0B982C1528E6000F9DED /* RNCCameraRoll.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -151,6 +162,14 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-plantrics-plantricsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D10C0B992C1528E6000F9DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10C0B9D2C1528E6000F9DED /* libRNCCameraRoll.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +245,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D10C0B992C1528E6000F9DED /* Products */;
+					ProjectRef = D10C0B982C1528E6000F9DED /* RNCCameraRoll.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* plantrics */,
@@ -233,6 +258,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D10C0B9D2C1528E6000F9DED /* libRNCCameraRoll.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCCameraRoll.a;
+			remoteRef = D10C0B9C2C1528E6000F9DED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {

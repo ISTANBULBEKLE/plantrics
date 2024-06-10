@@ -1,28 +1,29 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
+// App.js
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import CameraScreen from './src/screens/CameraScreen';
+import ResultScreen from './src/screens/ResultSecreen';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>FIRST PAGE</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="CameraScreen">
+        <Stack.Screen
+          name="CameraScreen"
+          component={CameraScreen}
+          options={{title: 'Take a Picture'}}
+        />
+        <Stack.Screen
+          name="ResultScreen"
+          component={ResultScreen}
+          options={{title: 'Result'}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
